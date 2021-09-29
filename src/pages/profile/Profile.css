@@ -1,0 +1,138 @@
+.profile__layout{
+
+    margin-top: 20px;
+
+}
+
+.profile__img{
+
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #d5d0cc;
+
+}
+
+.profile__info{
+
+    padding-top: 10px;
+
+}
+
+.row__flex{
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.col__flex{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .id__number{
+
+        margin-left: 10px;
+        color: #498aab;
+        margin-top: 8px;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 501px) and (max-width: 730px) {
+
+    .id__number{
+
+        margin-left: 10px;
+        color: #498aab;
+        margin-top: 10px;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 731px) and (max-width: 900px) {
+
+    .id__number{
+
+        margin-left: 10px;
+        color: #498aab;
+        margin-top: 12px;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 901px) {
+
+    .id__number{
+
+        margin-left: 10px;
+        color: #498aab;
+        margin-top: 15px;
+
+    }
+
+}
+
+.email{
+
+    color: #69b5d4;
+
+}
+
+.role__id{
+
+    color: black;
+
+}
+
+.account{
+
+    margin-bottom: 15px;
+
+}
+
+.line__breaker{
+
+    border-top: 3px solid #bbb;
+
+}
+
+.info__icon{
+
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+
+}
+
+.user__role__icon{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -2.5px;
+
+}
+
+.form__icon{
+
+    height: 20px;
+    width: 20px;
+    margin-top: -2.5px;
+    margin-right: 5px;
+
+}
+
+.calendar__icon{
+
+    margin-top: -5px;
+
+}
