@@ -140,5 +140,13 @@
 .edit__btn{
 
     float: right;
+    margin-top: -8.75px;
+
+}
+
+.edit__btn__1{
+
+    float: right;
+    margin-top: -35px !important;
 
 }

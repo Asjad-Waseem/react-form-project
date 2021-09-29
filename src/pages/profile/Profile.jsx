@@ -178,17 +178,15 @@ function Profile() {
                                             :
                                             <div className = "first__name__row">
                                             <p style={{marginBottom: "2px"}}>{firstNameDisplay}</p>
-                                            <Button className="edit__btn"
-                                                    style={{marginBottom: "-10px"}}
+                                            <Button className= { firstNameDisplay ? "edit__btn__1" : "edit__btn" }
                                                     value="Edit"
-                                                    type="submit"
                                                     onClick={(e) => {
                                                         setFormEditState(!formEditState);
                                                     }}> 
                                                     Edit
                                             </Button>
                                             </div>
-                                        }
+                                            }
                                     </Col>
                                     </Row>
                                     <br/>
@@ -470,8 +468,10 @@ function Profile() {
                                                         <Col md={4} />
                                                         <Col>
                                                             {formEditState ? 
-                                                                <Button value="Save"
-                                                                        onClick={() => setFormEditState(!formEditState)}> Save 
+                                                                <Button type="submit"
+                                                                        value="Save"
+                                                                        onClick={(e) => { setFormEditState(!formEditState);
+                                                                                          handleSubmit(e); }}> Save 
                                                                 </Button>
                                                             : null} 
                                                             
