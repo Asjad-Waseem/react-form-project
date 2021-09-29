@@ -176,7 +176,18 @@ function Profile() {
                                                 placeholder="First Name"
                                             />
                                             :
-                                            <p>{firstNameDisplay}</p>
+                                            <div className = "first__name__row">
+                                            <p style={{marginBottom: "2px"}}>{firstNameDisplay}</p>
+                                            <Button className="edit__btn"
+                                                    style={{marginBottom: "-10px"}}
+                                                    value="Edit"
+                                                    type="submit"
+                                                    onClick={(e) => {
+                                                        setFormEditState(!formEditState);
+                                                    }}> 
+                                                    Edit
+                                            </Button>
+                                            </div>
                                         }
                                     </Col>
                                     </Row>
@@ -287,7 +298,7 @@ function Profile() {
                                                 <Col>
                                                     {formEditState ?
                                                         <input className="col-md-8"
-                                                               type="number"
+                                                               type="text"
                                                                name="postalCode"
                                                                value={postalCode}
                                                                onChange={e => setPostalCode(e.target.value)}
@@ -382,7 +393,7 @@ function Profile() {
                                                     <Row>
                                                         <Col md={4}>
                                                             <HiOutlineMail className="form__icon" />
-                                                                ID
+                                                                Email
                                                         </Col>
                                                         <Col>
                                                             {formEditState ?
@@ -462,15 +473,8 @@ function Profile() {
                                                                 <Button value="Save"
                                                                         onClick={() => setFormEditState(!formEditState)}> Save 
                                                                 </Button>
-                                                            : 
-                                                                <Button value="Edit"
-                                                                        type="submit"
-                                                                        onClick={(e) => {
-                                                                        setFormEditState(!formEditState);
-                                                                }}> 
-                                                                    Edit
-                                                                </Button>
-                                                            }
+                                                            : null} 
+                                                            
                                                         </Col>
                                                     </Row>
                                 </Form>
